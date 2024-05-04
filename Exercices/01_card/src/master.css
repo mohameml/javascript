@@ -1,0 +1,14 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.card {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}

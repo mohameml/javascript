@@ -128,7 +128,21 @@ Ces fonctionnalités de DevTools offrent un ensemble complet d'outils pour le d�
 ![alt text](images/image.png)
 
 
-## 5. **Les commentaires:**
+
+## 5. **``ECMAScript``:**
+
+
+>ECMAScript (European Computer Manufacturers Association Script) est une norme de langage de programmation pour les scripts, souvent associée au langage JavaScript. La spécification ECMAScript définit les fonctionnalités du langage de programmation, telles que la syntaxe, les types de données, les structures de contrôle et les objets intégrés.
+
+- Les versions spécifiques d'ECMAScript, telles que ECMAScript 5, ECMAScript 6 (également connu sous le nom d'ES6), ECMAScript 2015, ECMAScript 2016, etc., définissent les fonctionnalités et les améliorations apportées au langage à différentes étapes de son évolution. Les développeurs utilisent ces versions pour créer des applications web interactives, des serveurs web, des applications mobiles et bien d'autres choses encore.
+
+- **``ES6``:**
+   [lien_ES6](https://www.javascripttutorial.net/es6/)
+
+
+
+
+## 6. **Les commentaires:**
 
 En JavaScript, il existe deux façons de créer des commentaires :
 
