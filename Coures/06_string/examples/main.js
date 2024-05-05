@@ -1,10 +1,6 @@
+console.log("Bonjour");
 
-
-
-console.log("Bonjour")
-
-
-// 
+//
 
 let title = "Elzero";
 let par = "Web School";
@@ -16,6 +12,10 @@ let card = `
             <p>${par}</p>
         </div>
     </div>
-`
-document.write(card)
+`;
+// document.write(card);
 
+// substring :
+
+const Title = "Elzero Web School";
+console.log(Title.indexOf("Bon"));
