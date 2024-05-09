@@ -7,7 +7,7 @@
   - 03_string : done
   - 04_number : done
   - 05_conditions : 31->39 done
-  - 06_array : 40 -> 47
+  - 06_array : 40 -> 47 --> done
   - 07_boucles : 48 -> 56
   - 08_fonctions : 57 -> 70
   - 09_programme_fonctionelle : 71 -> 78
