@@ -1,0 +1,13 @@
+{
+    "name": "Ahmed",
+    "prenom": "Mohamed",
+    "age": 25,
+    "skills": ["HTML", "CSS", "JS"],
+    "available": true,
+    "adress": {
+      "rue": "Rue Sidi",
+      "codePostale": 1200
+    }
+
+
+}

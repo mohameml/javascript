@@ -8,10 +8,10 @@
   - 04_number : done
   - 05_conditions : 31->39 done
   - 06_array : 40 -> 47 --> done
-  - 07_boucles : 48 -> 56
-  - 08_fonctions : 57 -> 70
-  - 09_programme_fonctionelle : 71 -> 78
-  - 10_object : 79 -> 85
+  - 07_boucles : 48 -> 56 --> done
+  - 08_fonctions : 57 -> 70 --> done
+  - 09_programme_fonctionelle : 71 -> 78 --> done
+  - 10_object : 79 -> 85 --> done
   - 11_DOM : 86 -> 101
   - 12_BOM : 102 -> 114
   - 13_destructuring : 115 -> 122
@@ -20,4 +20,4 @@
   - 16_POO : 147 -> 158
   - 17_Date_Time : 159 ->168
   - 18_JSON_API : 169 -> 178
-  - 19_Promise_fetch_Async_await
+  - 19_Promise_fetch_Async_await : 178 -> 188
