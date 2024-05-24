@@ -1,7 +1,6 @@
 let myElement = document.querySelector(".js");
 
-console.log(myElement);
-
+console.log(myElement.attributes);
 // les attributs innerHTML et textContent :
 
 console.log(myElement.innerHTML);
@@ -16,3 +15,10 @@ myElement.textContent = "bonjour <span>Trés bien </span>";
 
 document.images[0].alt = "image";
 document.images[0].title = "Title ";
+
+// les méthodes getAttribut , setAttribut
+
+// la différance entre innerText et textContent
+
+console.log(document.querySelector(".textConent").textContent);
+console.log(document.querySelector(".innerText").innerText);

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Meduim  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+h2 {
+  color: green;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+h2:hover {
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li {
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.scetion {
+  background-color: #ddd;
+  padding: 20px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* gap: 10px; */
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.card {
+  text-align: center;
+  width: 200px;
+  min-height: 100px;
+  padding: 20px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 7px;
+}
+
+.card span {
+  font-size: 45px;
+  font-weight: 600;
+}
+.card p {
+  font-size: 15px;
+  color: #ddd;
+}
+
+a {
+  opacity: 0.5;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: green;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
