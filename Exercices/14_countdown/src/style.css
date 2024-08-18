@@ -1,0 +1,15 @@
+.parent {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enf {
+    font-size: 40px;
+    font-weight: bold;
+}

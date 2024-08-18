@@ -1,0 +1,17 @@
+.container {
+    background: #eee;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-date {
+    display: block;
+    /* margin-bottom: 20; */
+    margin: 20px;
+    width: 60%;
+}
