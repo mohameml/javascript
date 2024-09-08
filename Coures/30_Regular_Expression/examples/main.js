@@ -49,3 +49,17 @@ let exemple = "OS1 OS2 OS3OS OS8 OS8OS";
 let exempleRegx = /OS[5-9]OS/g;
 
 console.log(exemple.match(exempleRegx));
+
+// Test Validation Email
+
+let emails = "o@nn.sa osama@gmail.com elzero@gmail.net osama@mail.ru";
+
+let emailsRegex = /\w+@\w+.(com|net)/gi;
+
+console.log(emails.match(emailsRegex));
+
+nums = "0110 10 150 05120 0560 350 00";
+console.log(nums.match(/\b0\d+0\b/gi));
+
+regex = /(https?:\/\/)?(www\.)?\w+\.com/gi;
+console.log("https://google.com http://www.elzero.com web.com".match(regex));
