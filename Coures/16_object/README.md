@@ -314,3 +314,43 @@
 
         console.log(avecProprieteAjoutee); // { a: 1, b: 2, c: 3 }
         ```
+
+## 8. **Object Meta Data And Descriptor:**
+
+-   **Definition:**
+
+    > La méthode **`Object.defineProperty`** en JavaScript permet de définir ou de modifier une propriété d'un objet avec un contrôle précis sur ses caractéristiques (comme son énumérabilité, sa configurabilité, ou son accessibilité).
+
+-   **Syntaxe :**
+
+    ```javascript
+    Object.defineProperty(obj, prop, descriptor);
+    ```
+
+    -   **`obj`** : L'objet sur lequel la propriété sera définie ou modifiée.
+    -   **`prop`** : Le nom de la propriété (sous forme de chaîne ou de symbole).
+    -   **`descriptor`** : Un objet décrivant la configuration de la propriété. Il peut contenir :
+        -   **`value`** : La valeur de la propriété.
+        -   **`writable`** : Si la valeur peut être modifiée (`true` par défaut pour les propriétés normales, `false` pour les propriétés définies via `defineProperty`).
+        -   **`configurable`** : Si la propriété peut être supprimée ou modifiée (`false` par défaut).
+        -   **`enumerable`** : Si la propriété apparaît dans une boucle `for...in` ou est incluse dans `Object.keys` (`false` par défaut).
+        -   **`get`** : Une fonction pour obtenir la valeur (getter).
+        -   **`set`** : Une fonction pour définir la valeur (setter).
+
+-   **Exemple 1 : Ajouter une propriété simple**
+
+    ```javascript
+    const person = {};
+
+    Object.defineProperty(person, "name", {
+        value: "Alice",
+        writable: false, // La valeur ne peut pas être modifiée
+        enumerable: true, // La propriété apparaîtra dans les itérations
+        configurable: false, // La propriété ne peut pas être reconfigurée ou supprimée
+    });
+
+    console.log(person.name); // Affiche : Alice
+    person.name = "Bob"; // Impossible de modifier la valeur (en mode strict, cela lève une erreur)
+    console.log(person.name); // Toujours Alice
+    console.log(delete person[name]); // false
+    ```

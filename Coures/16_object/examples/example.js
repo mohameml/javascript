@@ -1,14 +1,14 @@
 // example sur les objets
 
 let user = {
-  // propriétes
-  name: "Ahmed",
-  age: 20,
+    // propriétes
+    name: "Ahmed",
+    age: 20,
 
-  // méthodes :
-  sayHello: function () {
-    console.log("Hello");
-  },
+    // méthodes :
+    sayHello: function () {
+        console.log("Hello");
+    },
 };
 
 console.log(user);
@@ -18,22 +18,22 @@ user.sayHello();
 // objetc
 
 let userInfo = {
-  name: "Ahmed",
-  prenom: "Mohamed",
-  age: 25,
-  skills: ["HTML", "CSS", "JS"],
-  available: true,
-  adress: {
-    rue: "Rue Sidi",
-    codePostale: 1200,
-  },
+    name: "Ahmed",
+    prenom: "Mohamed",
+    age: 25,
+    skills: ["HTML", "CSS", "JS"],
+    available: true,
+    adress: {
+        rue: "Rue Sidi",
+        codePostale: 1200,
+    },
 
-  chackAv: function () {
-    if (this.available === true) {
-      return `Free for Work`;
-    }
-    return `Not free`;
-  },
+    chackAv: function () {
+        if (this.available === true) {
+            return `Free for Work`;
+        }
+        return `Not free`;
+    },
 };
 console.log("======= Info of : =======");
 console.log(userInfo.name);
@@ -45,7 +45,7 @@ console.log(userInfo.chackAv());
 // parcourir un objet
 
 for (let cle in userInfo) {
-  console.log(`${cle} : ${userInfo[cle]}`);
+    console.log(`${cle} : ${userInfo[cle]}`);
 }
 
 // modification
@@ -69,9 +69,23 @@ console.log(userInfo.name);
 // créer un objet avce Object()
 
 let myObject = new Object({
-  age: 12,
+    age: 12,
 });
 
 // this :
 console.log("============ this ==========");
 console.log(this);
+
+// =============================  Object.defineProperty ===================
+
+let dic = {
+    a: 1,
+    b: 2,
+};
+
+Object.defineProperty(dic, "c", {
+    writable: false,
+    enumerable: true,
+    configurable: false,
+    value: 3,
+});
