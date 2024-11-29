@@ -67,3 +67,59 @@
             xhr.send();
         });
     ```
+
+## 2. **XMLHttpRequest (XHR):**
+
+-   **Description**
+
+    > , La classe **`XMLHttpRequest`** est une API JavaScript permettant d’interagir avec des serveurs web via HTTP. Elle est utilisée pour envoyer des requêtes et recevoir des réponses de manière asynchrone (AJAX) ou synchrone. Bien que modernisée par **`fetch`**, elle reste largement utilisée.
+
+-   **Méthodes:**
+
+| **Méthode**                 | **Description**                                                     | **Syntaxe**                           |
+| --------------------------- | ------------------------------------------------------------------- | ------------------------------------- |
+| **`open`**                  | Initialise une requête HTTP (type, URL, mode asynchrone/synchrone). | `xhr.open(method, url, async)`        |
+| **`send`**                  | Envoie la requête au serveur, avec un éventuel corps.               | `xhr.send(body)`                      |
+| **`setRequestHeader`**      | Définit des en-têtes HTTP personnalisés.                            | `xhr.setRequestHeader(header, value)` |
+| **`abort`**                 | Annule la requête en cours.                                         | `xhr.abort()`                         |
+| **`getResponseHeader`**     | Récupère la valeur d’un en-tête HTTP spécifique.                    | `xhr.getResponseHeader(header)`       |
+| **`getAllResponseHeaders`** | Récupère tous les en-têtes HTTP sous forme de chaîne.               | `xhr.getAllResponseHeaders()`         |
+
+-   **Propriétés :`**
+
+| **Propriété**            | **Description**                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------- |
+| **`readyState`**         | Indique l’état actuel de la requête HTTP (`0` à `4`).                           |
+| **`response`**           | La réponse brute (peut être JSON, texte, etc.).                                 |
+| **`responseText`**       | La réponse sous forme de texte (disponible uniquement pour des réponses texte). |
+| **`responseXML`**        | La réponse sous forme de document XML (si le serveur renvoie du XML).           |
+| **`status`**             | Le code de statut HTTP renvoyé par le serveur (ex. : `200` pour OK).            |
+| **`statusText`**         | Le texte associé au code de statut (ex. : `OK` pour `200`).                     |
+| **`onreadystatechange`** | Un gestionnaire d’événement appelé à chaque changement de `readyState`.         |
+
+-   **Exemple : Requête GET**
+
+    Voici un exemple complet qui envoie une requête HTTP GET à un serveur et affiche la réponse dans la console :
+
+    ```javascript
+    // Crée une nouvelle instance de XMLHttpRequest
+    const xhr = new XMLHttpRequest();
+
+    // Configure la requête HTTP
+    xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true); // Méthode, URL, et asynchrone=true
+    // Envoie la requête
+    xhr.send();
+
+    // Gestionnaire d'événement pour suivre les changements d'état
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            // Vérifie si la requête est terminée
+            if (xhr.status === 200) {
+                // Vérifie si la requête a réussi
+                console.log("Réponse reçue :", xhr.responseText);
+            } else {
+                console.error(`Erreur ${xhr.status}: ${xhr.statusText}`);
+            }
+        }
+    };
+    ```
